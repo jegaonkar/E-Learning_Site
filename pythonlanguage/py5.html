@@ -1,0 +1,207 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\m6.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">Variables</p>
+			<div id="content_text">
+				<p>Here are some key points highlighting the importance of learning Python:</p>
+
+<span class="sub_point">1.Variable Naming Conventions:</span> <br>
+<p>Variables are case-sensitive, so myVar and myvar are considered different variables.
+	Variable names must start with a letter (a-z, A-Z) or an underscore (_). <br>
+	Variable names can contain letters, numbers, and underscores. <br>
+	Avoid using Python's reserved words (e.g., if, else, for, while, def, etc.) as variable names. <br>
+	Use descriptive names to make your code more readable. For example, use count instead of c.</p>
+<span class="sub_point">2.Data Types in Python:</span> <br>
+<p>Python supports several data types that variables can hold. Here are some of the most common ones: <br> <br>
+	int: Integer data type, e.g., age = 25. <br>
+	float: Floating-point number, e.g., height = 1.75. <br>
+	str: String, e.g., name = "Alice". <br>
+	bool: Boolean, e.g., is_student = True or is_teacher = False. <br>
+	list: Ordered collection of values, e.g., fruits = ['apple', 'banana', 'cherry']. <br>
+	tuple: Ordered, immutable collection, e.g., point = (3, 4). <br>
+	dict: Dictionary, key-value pairs, e.g., person = {'name': 'John', 'age': 30}. <br>
+</p>
+<span class="sub_point">3.Example Usage of Variables:</span> <br>
+<p>Here are some examples to illustrate the use of variables with different data types:
+	<pre>
+		# Integer and Float Variables
+age = 25
+height = 1.75
+
+# String Variable
+name = "Alice"
+
+# Boolean Variables
+is_student = True
+is_teacher = False
+
+# List Variable
+fruits = ['apple', 'banana', 'cherry']
+
+# Tuple Variable
+point = (3, 4)
+
+# Dictionary Variable
+person = {'name': 'John', 'age': 30}
+	</pre>
+</p>
+<span class="sub_point">4.Changing Variable Values:</span> <br>
+<p>You can change the value of a variable simply by reassigning it. For example:
+	<pre>x = 5  # Assigns the value 5 to variable x
+		x = 10  # Updates the value of variable x to 10</pre>
+</p>
+<span class="sub_point">5.Variable Scope:</span> <br>
+<p>Variables can have global or local scope, which determines where in your code they are accessible. <br><br>
+
+	Global variables are defined outside any function and are accessible from anywhere in the code. <br>
+	Local variables are defined within a function and are only accessible within that function.
+<pre>
+	x = 5  # Global variable
+
+def my_function():
+    y = 10  # Local variable
+    print(x)  # Accessing the global variable
+
+my_function()
+print(y)  # This will result in an error because y is a local variable
+
+</pre>
+<p>
+	In summary, variables are a fundamental concept in Python, allowing you to store, manipulate, and work with various types of data. Understanding variable naming conventions, data types, and scope is crucial for effective Python programming.
+</p>
+</p>
+</div>
+		<div class="circle-btn">
+			<a href="py4.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py6.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="m1.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

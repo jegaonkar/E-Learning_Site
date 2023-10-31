@@ -1,0 +1,191 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\m6.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">try and except</p>
+			<div id="content_text">
+				<p>
+					
+In Python, the try and except blocks are used for exception handling, allowing you to handle and gracefully recover from errors and exceptions that may occur during the execution of your code. Here's an overview of how the try and except blocks work:</p>
+<li><b>try Block:</b><p>The try block contains the code that you want to monitor for exceptions. It's the part of the code where you anticipate potential errors or exceptions might occur.
+	The try block must be followed by at least one except block to catch and handle exceptions.</p><pre>try:
+		# Code that may raise an exception
+	except ExceptionType:
+		# Code to handle the exception
+	</pre></li>
+<li><b>except Block:</b><p>The except block specifies the type of exception to catch and defines how to handle it. You can catch specific exception types or use a more general except block to catch any exception. <br>
+	You can have multiple except blocks to handle different types of exceptions. <br>
+	The code in the except block is executed when the specified exception is raised.</p><pre>try:
+		# Code that may raise an exception
+	except SpecificExceptionType:
+		# Code to handle SpecificExceptionType
+	except AnotherExceptionType:
+		# Code to handle AnotherExceptionType
+	except:
+		# Code to handle any other exception
+	</pre></li>
+<li><b>Handling Specific Exceptions:</b><p>You can catch specific exceptions by specifying their type. For example, you might want to catch a FileNotFoundError when working with files</p><pre>try:
+    with open('file.txt', 'r') as file:
+        data = file.read()
+except FileNotFoundError:
+    print("The file does not exist.")
+</pre></li>
+<li><b>Handling Multiple Exceptions:</b><p>You can catch multiple exceptions by using multiple except blocks. The first matching except block will handle the exception.</p><pre>try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
+except ArithmeticError:
+    print("An arithmetic error occurred.")
+</pre></li>
+<li><b>Generic Exception Handling:</b><p>You can use a more generic except block to catch any exception. However, it's better to catch specific exceptions whenever possible.</p><pre>try:
+    # Code that may raise an exception
+except:
+    # Code to handle any exception
+</pre></li>
+<li><b>else and finally Blocks (Optional):
+</b><p>You can include an else block to execute code when no exception is raised within the try block. <br>
+	You can include a finally block to execute code that always runs, regardless of whether an exception was raised. This is often used for cleanup operations.</p><pre>try:
+		# Code that may raise an exception
+	except ExceptionType:
+		# Code to handle the exception
+	else:
+		# Code to execute if no exception is raised
+	finally:
+		# Code that always runs
+	</pre></li>
+	<p>Exception handling using try and except blocks is a crucial part of writing robust and reliable Python code. It helps your programs gracefully recover from errors, provide meaningful error messages, and avoid crashing due to unhandled exceptions.</p>
+
+</div>
+		<div class="circle-btn">
+			<a href="py20.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py22.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="m1.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

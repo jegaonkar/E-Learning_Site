@@ -1,0 +1,192 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\m6.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">Reading Writing</p>
+			<div id="content_text">
+				<p>
+					Reading and writing data is a fundamental aspect of programming, especially when working with files and external data sources in Python. Here's an overview of how to read and write data in Python:</p>
+
+<span class="sub_point">Reading Data:</span> <br>
+<p>
+<li><b>Open a File: </b><p>To read data from a file, you need to open the file using the open() function. You provide the file's path and specify the mode as "r" (read).</p><pre>with open('data.txt', 'r') as file:
+    data = file.read()
+</pre></li>
+<li><b>Read Methods:</b><p>
+
+	<li><b>read(): </b> Reads the entire content of the file as a single string.</li>
+	<li><b>readline():</b>Reads one line at a time.</li>
+	<li><b>readlines():</b>Reads all lines into a list.</li>
+</p><pre>with open('data.txt', 'r') as file:
+    line = file.readline()
+    lines = file.readlines()
+</pre></li>
+</p>
+
+<span class="sub_point">1. Positional Arguments:</span> <br>
+<p>
+	
+<li><b>Open a File: </b><p>To write data to a file, open the file in write mode ("w"). If the file doesn't exist, it will be created. If it does exist, its content will be truncated.</p><pre>with open('output.txt', 'w') as file:
+    file.write("Hello, World!")
+</pre></li>
+<li><b>Append Mode:</b><p>To add data to an existing file without overwriting its content, open the file in append mode ("a").</p><pre>with open('output.txt', 'a') as file:
+    file.write(" - Additional data.")
+</pre></li>
+<li><b>Writing Lines: </b><p>You can write a list of lines to a file using the writelines() method. Remember to add newline characters if needed.</p><pre>lines = ["Line 1\n", "Line 2\n", "Line 3\n"]
+	with open('output.txt', 'w') as file:
+		file.writelines(lines)
+	</pre></li>
+</p>
+
+<span class="sub_point">File Handling with Context Managers:</span> <br>
+<p>
+	Using the with statement as shown in the examples is a best practice. It ensures that the file is properly closed after use, even if an error occurs.
+</p>
+
+<span class="sub_point">Exception Handling:</span> <br>
+<p>
+	When reading or writing files, it's good practice to handle exceptions, such as FileNotFoundError and PermissionError, to deal with potential issues gracefully.
+	<br><pre>try:
+		with open('data.txt', 'r') as file:
+			data = file.read()
+	except FileNotFoundError:
+		print("The file does not exist.")
+	except PermissionError:
+		print("Permission to read the file is denied.")
+	</pre>
+</p>
+<p>Reading and writing data in Python is essential for various tasks, including data processing, log files, configuration files, and more. It's important to follow best practices to handle files and exceptions effectively and ensure data integrity.</p>
+</div>
+		<div class="circle-btn">
+			<a href="py18.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py20.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="m1.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\m6.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">Modules</p>
+			<div id="content_text">
+				<p>
+					In Python, a module is a file containing Python code, typically in the form of functions, classes, and variables, that can be imported and used in other Python scripts or programs. Modules help organize and reuse code, making it more manageable and efficient. Here are the key points about modules in Python:</p>
+
+<span class="sub_point">1. Creating Modules:</span> <br>
+<p>
+	To create a module, you write Python code in a .py file. This file's name becomes the module name, excluding the file extension. <br>
+	For example, you can create a module named my_module.py containing functions and variables.
+</p>
+
+<span class="sub_point">2. Importing Modules:</span> <br>
+<p>
+	To use the functions and variables defined in a module, you need to import the module. <br>
+You can import an entire module or specific items (functions, classes, or variables) from a module.
+<pre># Importing an entire module
+	import my_module
+	
+	# Importing specific items from a module
+	from my_module import my_function, my_variable
+	</pre>
+</p>
+
+<span class="sub_point">3. Using Module Items:</span> <br>
+<p>
+	Once a module is imported, you can use its items in your code by referencing them with the module name.
+	<pre>import my_module
+
+		result = my_module.my_function(5)
+		print(my_module.my_variable)
+		</pre>
+</p>
+
+<span class="sub_point">4. Standard Library Modules:</span> <br>
+<p>
+	Python includes a vast standard library with many built-in modules that provide various functionalities, such as math, random, and os.
+	<pre>import math
+
+		value = math.sqrt(16)
+		</pre>
+</p>
+
+<span class="sub_point">5. Creating Custom Modules:</span> <br>
+<p>
+	You can create your own custom modules to encapsulate and reuse code in different projects. Simply create .py files with the functions and classes you want to use.
+</p>
+
+<span class="sub_point">6. Module Aliases:</span> <br>
+<p>
+	You can provide aliases for imported modules or items using the as keyword. This can make code more concise or avoid naming conflicts.
+
+<pre>import my_module as mm
+
+	result = mm.my_function(5)
+	</pre></p>
+
+<span class="sub_point">7. if __name__ == "__main__": Block:</span> <br>
+<p>
+	You can include an if __name__ == "__main__": block in your module to define code that should run only when the module is executed directly and not when it's imported as a module.
+	<pre>def my_function():
+		# Function code
+	
+	if __name__ == "__main__":
+		# Code to run when the module is executed directly
+		result = my_function()
+	</pre>
+</p>
+<p>Modules are an essential part of Python's code organization and reuse, allowing you to break down large codebases into manageable pieces and share functionality between different scripts and projects. By importing and using modules effectively, you can streamline your coding process and make your code more modular and maintainable.</p>
+
+</div>
+		<div class="circle-btn">
+			<a href="py22.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py24.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="m1.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

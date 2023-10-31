@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\m6.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">String Methods and Formatting</p>
+			<div id="content_text">
+				<p>
+					Working with strings in Python often involves using various string methods for manipulation and formatting. Here's an overview of common string methods and string formatting techniques:</p>
+
+<span class="sub_point">String Methods:</span> <br>
+<p>
+<li><b>str.upper() and str.lower():</b><p>These methods convert a string to all uppercase or lowercase letters, respectively.</p><pre>text = "Hello, World"
+	uppercase = text.upper()  # "HELLO, WORLD"
+	lowercase = text.lower()  # "hello, world"
+	</pre></li>
+<li><b>str.strip(), str.lstrip(), and str.rstrip():</b><p>These methods remove whitespace characters from the beginning and/or end of a string.</p><pre>text = "  Python  "
+	stripped = text.strip()  # "Python"
+	</pre></li>
+<li><b>str.replace():</b><p> This method replaces a substring with another substring in a string.</p><pre>text = "I love Python"
+	new_text = text.replace("Python", "programming")  # "I love programming"
+	</pre></li>
+<li><b>str.split(): </b><p>This method splits a string into a list of substrings based on a specified delimiter (default is space).</p><pre>text = "apple, banana, cherry"
+	fruits = text.split(", ")  # ['apple', 'banana', 'cherry']
+	</pre></li>
+<li><b>str.join(): </b><p>This method joins a list of strings into one string, using the original string as a separator.</p><pre>fruits = ['apple', 'banana', 'cherry']
+	text = ", ".join(fruits)  # "apple, banana, cherry"
+	</pre></li>
+<li><b>str.find() and str.index():</b><p>These methods search for a substring in a string and return its index. find() returns -1 if the substring is not found, while index() raises an error.</p><pre>text = "Python is fun"
+	position1 = text.find("is")  # 7
+	position2 = text.index("fun")  # 11
+	</pre></li>
+<li><b>str.startswith() and str.endswith():</b><p>These methods check if a string starts or ends with a specified substring, returning a Boolean value.</p><pre>text = "Hello, World"
+	starts_with_hello = text.startswith("Hello")  # True
+	ends_with_world = text.endswith("world")  # False
+	</pre></li>
+</p>
+
+<span class="sub_point">String Formatting:</span> <br>
+<p>
+	<li><b>f-strings: </b> <p> Introduced in Python 3.6, f-strings provide a convenient way to embed expressions within strings. Place an 'f' or 'F' before the string and use curly braces {} to enclose the expressions.</p> <pre>name = "Alice"
+		age = 30
+		message = f"Hello, {name}! You are {age} years old."
+		</pre></li>
+	<li><b>str.format():</b> <p>This method allows you to insert values into a string using placeholders within the string and providing the values as arguments to the format() method.</p> <pre>name = "Bob"
+		age = 25
+		message = "Hello, {}! You are {} years old.".format(name, age)
+		</pre></li>
+	<li><b>% Operator:/b> <p>String formatting can also be achieved using the % operator. This method is older and less recommended but still supported.</p> <pre>name = "Carol"
+		age = 35
+		message = "Hello, %s! You are %d years old." % (name, age)
+		</pre></li>
+</p>
+<p>String methods and formatting techniques are essential for manipulating and presenting text data in Python. These tools allow you to create dynamic, readable, and well-structured strings for various applications, such as user interfaces and data processing.</p>
+
+</div>
+		<div class="circle-btn">
+			<a href="py17.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py19.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="m1.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

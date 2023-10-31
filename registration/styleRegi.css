@@ -1,0 +1,268 @@
+.codopedia-register {
+  background-color: #ebefff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.codopedia-register .div {
+  background-color: #ebefff;
+  width: 1280px;
+  height: 720px;
+  position: relative;
+}
+
+.codopedia-register .overlap input{
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 239px;
+  left: 755px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #003b93;
+  text-align: center;
+}
+
+.codopedia-register .overlap-group input{
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 163px;
+  left: 755px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #003b93;
+  text-align: center;
+}
+
+.codopedia-register .overlap-2 input{
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 395px;
+  left: 757px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #003b93;
+  text-align: center;
+}
+
+.codopedia-register .overlap-3 input{
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 319px;
+  left: 755px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #003b93;
+  text-align: center;
+}
+
+.codopedia-register .overlap-4 input{
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 471px;
+  left: 757px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #003b93;
+  text-align: center;
+}
+
+.codopedia-register .overlap-5 {
+  position: absolute;
+  width: 82px;
+  height: 19px;
+  top: 209px;
+  left: 756px;
+}
+
+.codopedia-register .div-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.codopedia-register .overlap-6 {
+  position: absolute;
+  width: 77px;
+  height: 19px;
+  top: 133px;
+  left: 756px;
+}
+
+.codopedia-register .overlap-7 {
+  position: absolute;
+  width: 219px;
+  height: 19px;
+  top: 589px;
+  left: 838px;
+}
+
+.codopedia-register .text-wrapper {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.codopedia-register .span {
+  font-weight: 500;
+}
+
+.codopedia-register .overlap-8 {
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 529px;
+  left: 760px;
+}
+
+.codopedia-register .group {
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 0;
+  left: 0;
+}
+
+.codopedia-register .div-wrapper button{
+  position: relative;
+  width: 365px;
+  height: 34px;
+  background-color: #003b93;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.codopedia-register .text-wrapper-2 {
+  position: absolute;
+  top: 7px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ebefff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  background: transparent;
+  transition: background-color 0.3s;
+}
+
+.codopedia-register .text-wrapper-2:hover{
+  background-color: #0849ab;
+}
+
+.codopedia-register .overlap-9 {
+  position: absolute;
+  width: 79px;
+  height: 19px;
+  top: 365px;
+  left: 760px;
+}
+
+.codopedia-register .overlap-10 {
+  position: absolute;
+  width: 45px;
+  height: 19px;
+  top: 289px;
+  left: 758px;
+}
+
+.codopedia-register .overlap-11 {
+  position: absolute;
+  width: 143px;
+  height: 19px;
+  top: 441px;
+  left: 760px;
+}
+
+.codopedia-register .overlap-12 {
+  position: absolute;
+  width: 598px;
+  height: 836px;
+  top: -167px;
+  left: 101px;
+}
+
+.codopedia-register .rectangle {
+  position: absolute;
+  width: 635px;
+  height: 377px;
+  top: 150px;
+  left: -91px;
+  background-color: #003b93;
+  border-radius: 105.53px;
+  transform: rotate(-97.17deg);
+}
+
+.codopedia-register .rectangle-2 {
+  position: absolute;
+  width: 635px;
+  height: 377px;
+  top: 197px;
+  left: -65px;
+  background-color: #008cff;
+  border-radius: 105.53px;
+  transform: rotate(-90deg);
+}
+
+.codopedia-register .object-other {
+  position: absolute;
+  width: 536px;
+  height: 492px;
+  top: 344px;
+  left: 62px;
+  object-fit: cover;
+}
+
+.codopedia-register .social-media-icons-wrapper {
+  position: absolute;
+  width: 88px;
+  height: 24px;
+  top: 636px;
+  left: 917px;
+  background-image: url(./img/social-media-icons-1.png);
+  background-size: 100% 100%;
+}
+
+.codopedia-register .social-media-icons {
+  position: absolute;
+  width: 88px;
+  height: 24px;
+  top: 0;
+  left: 0;
+}
+
+.codopedia-register .overlap-13 {
+  position: absolute;
+  width: 243px;
+  height: 19px;
+  top: 91px;
+  left: 818px;
+}
+
+.codopedia-register .p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #191919;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
