@@ -1,0 +1,251 @@
+<html>
+	<head>
+		<title> Codopedia HTML (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">HTML</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="ht1.html" class="active" >Introduction</a>
+				<ul>
+                    <li><a href="ht1.html" >Importance</a></li>
+					<li><a href="ht2.html" >Brief Overview</a></li>
+					
+				</ul></li>
+                <li><a href="ht3.html" >HTML Syntax and Structure</a></li>
+				<li><a href="ht4.html" >Text and Formatting</a>
+				<ul>
+					<li><a href="ht5.html" >HTML links </a></li>
+					<li><a href="ht6.html" >HTML Block and Inline Elements</a></li>
+					<li><a href="ht7.html" >HTML classes</a></li>
+					<li><a href="ht8.html" >HTML ID </a></li>
+				</ul></li>
+				<li><a href="ht9.html" >HTML Forms </a>				
+				<ul>
+					<li><a href="ht10.html" >HTML Form Attributes</a></li>
+					<li><a href="ht11.html" >HTML Form Elements</a></li>
+					<li><a href="ht12.html" >HTML Input Types</a></li>
+				</ul></li>
+				<li><a href="ht13.html" >HTML Lists </a>
+				<ul>
+					<li><a href="ht14.html" >HTML Unordered Lists</a></li>
+					<li><a href="ht15.html" >HTML Ordered Lists</a></li>
+				</ul></li>
+				<li><a href="ht16.html" >HTML Media </a>
+				<ul>
+					<li><a href="ht17.html" >HTML Video</a></li>
+					<li><a href="ht18.html" >HTML Audio</a></li>
+					<li><a href="ht19.html" >HTML Plug-ins</a></li>
+					<li><a href="ht20.html" >HTML YouTube </a></li>
+				</ul></li>
+				<li><a href="ht21.html" >HTML API's </a>
+				<ul>
+					<li><a href="ht22.html" >HTML Geolocation</a></li>
+					<li><a href="ht23.html" >HTML Drag and Drop</a></li>
+				</ul></li>
+				<li><a href="ht24.html" >HTML Character Sets </a>
+				</li>
+				<li><a href="ht25.html" >HTML Styles - CSS</a>
+				</li>
+				<li><a href="ht26.html" >HTML Computer Code </a></li>
+
+                <li><a href="ht27.html" >HTML vs. XHTML </a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">HTML Form Attributes </p>
+			<div id="content_text"> <br>
+                <p>This chapter describes the different attributes for the HTML < form> element. <br>
+
+                    
+                </p> 
+				
+
+<span class="sub_point">1. The Action Attribute:</span> <br>
+<p>
+    The action attribute defines the action to be performed when the form is submitted. <br>
+
+Usually, the form data is sent to a file on the server when the user clicks on the submit button. <br>
+
+In the example below, the form data is sent to a file called "action_page.php". This file contains a <br>
+server-side script that handles the form data: <br>
+
+Example <br><br>
+On submit, send form data to "action_page.php": <br>
+
+
+    <pre>< form action="/action_page.php"> <br>
+        < label for="fname">First name:< /label>< br> <br>
+        < input type="text" id="fname" name="fname" value="John">< br> <br>
+        < label for="lname">Last name:< /label>< br> <br>
+        < input type="text" id="lname" name="lname" value="Doe">< br>< br> <br>
+        < input type="submit" value="Submit">
+      < /form>
+      
+        </pre>
+
+         <br>
+
+
+</p>
+<span class="sub_point">2. The Target Attribute: </span> <br>
+<p>The target attribute specifies where to display the response that is received after submitting the <br>form. <br>
+
+    The target attribute can have one of the following values: <br>
+    
+    Here are some examples: <br> <br>
+     _blank -	&nbsp;&nbsp;	The response is displayed in a new window or tab <br>
+     _self - &nbsp;&nbsp;	The response is displayed in the current window <br>
+     _parent -	&nbsp;&nbsp;	The response is displayed in the parent frame <br>
+     _top - &nbsp;&nbsp;	The response is displayed in the full body of the window <br>
+     framename - &nbsp;&nbsp;	The response is displayed in a named iframe <br>
+
+     The default value is _self which means that the response will open in the current window. <br>
+
+     Example <br><br>
+Here, the submitted result will open in a new browser tab: <br> <br>
+
+<pre>< form action="/action_page.php" target="_blank">< /form></pre>
+    
+
+</p>
+
+
+<span class="sub_point">3. The Method Attribute:</span> 
+<p>The method attribute specifies the HTTP method to be used when submitting the form data. <br><br>
+
+    The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with <br>method="post"). <br>
+    
+    The default HTTP method when submitting form data is GET. <br>
+    
+    Example <br><br>
+    This example uses the GET method when submitting the form data: <br>
+
+<pre>< form action="/action_page.php" method="get"> </pre>
+
+Example <br><br>
+This example uses the POST method when submitting the form data: <br><br>
+
+<pre>< form action="/action_page.php" method="post"></pre> <br><br>
+
+<h3><b>Notes on GET:</b></h3>
+
+Appends the form data to the URL, in name/value pairs. <br>
+NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!). <br>
+The length of a URL is limited (2048 characters). <br>
+Useful for form submissions where a user wants to bookmark the result. <br>
+GET is good for non-secure data, like query strings in Google. <br> <br>
+
+<h3><b>Notes on POST:</b></h3>
+
+    Appends the form data inside the body of the HTTP request (the submitted form data is not shown in <br>the URL). <br>
+    POST has no size limitations, and can be used to send large amounts of data. <br>
+    Form submissions with POST cannot be bookmarked <br> <br>
+
+    
+    
+    
+    
+    
+</p>
+<span class="sub_point">4. The Autocomplete Attribute</span> <br>
+<p><br>The autocomplete attribute specifies whether a form should have autocomplete on or off. <br><br>
+
+    When autocomplete is on, the browser automatically complete values based on values that the user has <br>entered before. <br>
+    
+    Example <br><br>
+    A form with autocomplete on: <br><br>
+
+    <pre>< form action="/action_page.php" autocomplete="on">< /form></pre> <br>
+
+
+
+</p>
+
+        
+   
+        <span class="sub_point">5. The Novalidate Attribute:</span> <br>
+        <p>The novalidate attribute is a boolean attribute.
+
+            When present, it specifies that the form-data (input) should not be validated when submitted. <br><br>
+            
+            Example <br><br>
+            A form with a novalidate attribute: <br>
+            
+            
+        <pre>< form action="/action_page.php" novalidate></pre></p>
+
+           
+</div>
+		<div class="circle-btn">
+			<a href="ht9.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="ht11.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Comments </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,223 @@
+<html>
+	<head>
+		<title> Codopedia HTML (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">HTML</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="ht1.html" class="active" >Introduction</a>
+				<ul>
+                    <li><a href="ht1.html" >Importance</a></li>
+					<li><a href="ht2.html" >Brief Overview</a></li>
+					
+				</ul></li>
+                <li><a href="ht3.html" >HTML Syntax and Structure</a></li>
+				<li><a href="ht4.html" >Text and Formatting</a>
+				<ul>
+					<li><a href="ht5.html" >HTML links </a></li>
+					<li><a href="ht6.html" >HTML Block and Inline Elements</a></li>
+					<li><a href="ht7.html" >HTML classes</a></li>
+					<li><a href="ht8.html" >HTML ID </a></li>
+				</ul></li>
+				<li><a href="ht9.html" >HTML Forms </a>				
+				<ul>
+					<li><a href="ht10.html" >HTML Form Attributes</a></li>
+					<li><a href="ht11.html" >HTML Form Elements</a></li>
+					<li><a href="ht12.html" >HTML Input Types</a></li>
+				</ul></li>
+				<li><a href="ht13.html" >HTML Lists </a>
+				<ul>
+					<li><a href="ht14.html" >HTML Unordered Lists</a></li>
+					<li><a href="ht15.html" >HTML Ordered Lists</a></li>
+				</ul></li>
+				<li><a href="ht16.html" >HTML Media </a>
+				<ul>
+					<li><a href="ht17.html" >HTML Video</a></li>
+					<li><a href="ht18.html" >HTML Audio</a></li>
+					<li><a href="ht19.html" >HTML Plug-ins</a></li>
+					<li><a href="ht20.html" >HTML YouTube </a></li>
+				</ul></li>
+				<li><a href="ht21.html" >HTML API's </a>
+				<ul>
+					<li><a href="ht22.html" >HTML Geolocation</a></li>
+					<li><a href="ht23.html" >HTML Drag and Drop</a></li>
+				</ul></li>
+				<li><a href="ht24.html" >HTML Character Sets </a>
+				</li>
+				<li><a href="ht25.html" >HTML Styles - CSS</a>
+				</li>
+				<li><a href="ht26.html" >HTML Computer Code </a></li>
+
+                <li><a href="ht27.html" >HTML vs. XHTML </a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">Introduction to Hyperlinks </p>
+			<div id="content_text"> <br>
+                <p>In this introductory lesson, students will be introduced to the concept of hyperlinks, which are the foundation of web navigation.</p>
+				
+
+<span class="sub_point">1. HTML Links - Hyperlinks:</span> <br>
+<p>
+    HTML links are hyperlinks. <br>
+    
+    You can click on a link and jump to another document. <br>
+    
+    When you move the mouse over a link, the mouse arrow will turn into a little hand. <br><br>
+
+   <b>Note:</b> A link does not have to be text. A link can be an image or any other HTML element.<br>
+</p>
+<span class="sub_point">2. HTML Links - Syntax: </span> <br>
+<p>The HTML < a> tag defines a hyperlink. It has the following syntax:<br>
+   <pre>< a href="url">link text< /a></pre> 
+   The most important attribute of the < a> element is the href attribute, which indicates the link's destination. <br>
+
+    The link text is the part that will be visible to the reader. <br>
+    
+    Clicking on the link text, will send the reader to the specified URL address. <br>
+    Example <br>
+This example shows how to create a link to Google.com:
+
+<pre>< a href="https://www.Google.com/">Visit Google.com!< /a></pre>
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue <br>
+A visited link is underlined and purple <br>
+An active link is underlined and red <br>
+<b>Tip: </b> Links can of course be styled with CSS, to get another look!<br><br>
+
+</p>
+
+
+<span class="sub_point">3. HTML Links - The target Attribute</span> <br>
+<p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. <br> 
+ 
+    The target attribute specifies where to open the linked document. <br>
+
+    The target attribute can have one of the following values: <br>
+    
+    _self - Default. Opens the document in the same window/tab as it was clicked <br>
+    _blank - Opens the document in a new window or tab <br>
+    _parent - Opens the document in the parent frame <br>
+    _top - Opens the document in the full body of the window <br>
+    Example <br>
+Use target="_blank" to open the linked document in a new browser window or tab: <br>
+<pre>< a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!< /a></pre><br> <br>
+
+
+    
+</p>
+<span class="sub_point">4. Absolute URLs vs. Relative URLs:</span> <br>
+<p><br>Both examples above are using an absolute URL (a full web address) in the href attribute. <br>
+
+    A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+    Example <br>
+    <pre>< h2>Absolute URLs< /h2>
+        < p>< a href="https://www.w3.org/">W3C< /a>< /p>
+        < p>< a href="https://www.google.com/">Google< /a>< /p>
+        
+        < h2>Relative URLs< /h2>
+        < p>< a href="html_images.asp">HTML Images< /a>< /p>
+        < p> < a href="/css/default.asp">CSS Tutorial< /a>< /p></pre><br><br>
+
+        
+   
+        <span class="sub_point">5. Button as a Link:</span> <br>
+        <p>To use an HTML button as a link, you have to add some JavaScript code. <br>
+
+JavaScript allows you to specify what happens at certain events, such as a click of a button: <br>
+
+Example <br>
+<pre>< button onclick="document.location='default.asp'">HTML Tutorial< /button></pre>
+
+<b>Chapter Summary:</b><br><br>
+Use the < a> element to define a link. <br>
+Use the href attribute to define the link address. <br>
+Use the target attribute to define where to open the linked document. <br>
+Use the < img> element (inside < a>) to use an image as a link. <br>
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program. <br> <br>
+
+<span class="sub_point">6. HTML Links - Different Colors:</span> <br> 
+<h3>HTML Link Colors</h3> 
+By default, a link will appear like this (in all browsers): <br> <br>
+
+An unvisited link is underlined and blue <br>
+A visited link is underlined and purple <br>
+An active link is underlined and red <br>
+
+<h3>HTML Link Tags </h3>
+< a>	Defines a hyperlink <br>
+</div>
+		<div class="circle-btn">
+			<a href="ht4.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="ht6.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Comments </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

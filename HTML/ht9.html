@@ -1,0 +1,256 @@
+<html>
+	<head>
+		<title> Codopedia HTML (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">HTML</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="ht1.html" class="active" >Introduction</a>
+				<ul>
+                    <li><a href="ht1.html" >Importance</a></li>
+					<li><a href="ht2.html" >Brief Overview</a></li>
+					
+				</ul></li>
+                <li><a href="ht3.html" >HTML Syntax and Structure</a></li>
+				<li><a href="ht4.html" >Text and Formatting</a>
+				<ul>
+					<li><a href="ht5.html" >HTML links </a></li>
+					<li><a href="ht6.html" >HTML Block and Inline Elements</a></li>
+					<li><a href="ht7.html" >HTML classes</a></li>
+					<li><a href="ht8.html" >HTML ID </a></li>
+				</ul></li>
+				<li><a href="ht9.html" >HTML Forms </a>				
+				<ul>
+					<li><a href="ht10.html" >HTML Form Attributes</a></li>
+					<li><a href="ht11.html" >HTML Form Elements</a></li>
+					<li><a href="ht12.html" >HTML Input Types</a></li>
+				</ul></li>
+				<li><a href="ht13.html" >HTML Lists </a>
+				<ul>
+					<li><a href="ht14.html" >HTML Unordered Lists</a></li>
+					<li><a href="ht15.html" >HTML Ordered Lists</a></li>
+				</ul></li>
+				<li><a href="ht16.html" >HTML Media </a>
+				<ul>
+					<li><a href="ht17.html" >HTML Video</a></li>
+					<li><a href="ht18.html" >HTML Audio</a></li>
+					<li><a href="ht19.html" >HTML Plug-ins</a></li>
+					<li><a href="ht20.html" >HTML YouTube </a></li>
+				</ul></li>
+				<li><a href="ht21.html" >HTML API's </a>
+				<ul>
+					<li><a href="ht22.html" >HTML Geolocation</a></li>
+					<li><a href="ht23.html" >HTML Drag and Drop</a></li>
+				</ul></li>
+				<li><a href="ht24.html" >HTML Character Sets </a>
+				</li>
+				<li><a href="ht25.html" >HTML Styles - CSS</a>
+				</li>
+				<li><a href="ht26.html" >HTML Computer Code </a></li>
+
+                <li><a href="ht27.html" >HTML vs. XHTML </a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">HTML Forms </p>
+			<div id="content_text"> <br>
+                <p>An HTML form is used to collect user input. The user input is most often sent to a <br>server for processing. <br>
+                </p> 
+				
+
+<span class="sub_point">1. The < form> Element:</span> <br>
+<p>
+    The HTML < form> element is used to create an HTML form for user input: <br>
+
+
+    <pre>< form>
+        .
+        form elements
+        .
+        < /form>
+        .</pre>
+
+        The < form> element is a container for different types of input elements, such as: text fields, <br>checkboxes, radio buttons, submit buttons, etc. <br>
+
+
+</p>
+<span class="sub_point">2. The < input> Element: </span> <br>
+<p>The HTML < input> element is the most used form element. <br>
+
+    An < input> element can be displayed in many ways, depending on the type attribute. <br>
+    
+    Here are some examples: <br> <br>
+    < input type="text"> -	Displays a single-line text input field <br>
+    < input type="radio"> -	Displays a radio button (for selecting one of many choices) <br>
+    < input type="checkbox"> -	Displays a checkbox (for selecting zero or more of many choices) <br>
+    < input type="submit"> -	Displays a submit button (for submitting the form) <br>
+    < input type="button"> -	Displays a clickable button <br>
+    
+
+</p>
+
+
+<span class="sub_point">3. Text Fields:</span> 
+<p>The < input type="text"> defines a single-line input field for text input.  <br> <br>
+
+    Example <br><br>
+A form with input fields for text: <br>
+
+<pre>< form>
+  < label for="fname">First name:< /label><br>
+  < input type="text" id="fname" name="fname"><br>
+  < label for="lname">Last name:< /label><br>
+  < input type="text" id="lname" name="lname"><br>
+< /form> </pre>
+
+    
+    
+    
+    
+    
+</p>
+<span class="sub_point">4. The < label> Element:</span> <br>
+<p><br>Notice the use of the < label> element in the example above. <br><br>
+
+    The < label> tag defines a label for many form elements. <br>
+    <br><br>
+    The < label> element is useful for screen-reader users, because the screen-reader will read out loud <br> the label when the user focuses on the input element.
+    <br><br>
+    The < label> element also helps users who have difficulty clicking on very small regions (such as <br>radio buttons or checkboxes) - because when the user clicks the text within the < label> element, it <br> toggles the radio button/checkbox. <br><br>
+    
+    The for attribute of the < label> tag should be equal to the id attribute of the < input> element to <br> bind them together.<br> <br>
+    
+
+        
+   
+        <span class="sub_point">5. Radio Buttons:</span> <br>
+        <p>The < input type="radio"> defines a radio button. <br>
+
+            Radio buttons let a user select ONE of a limited number of choices. <br>
+            
+            Example <br><br>
+            A form with radio buttons: <br>
+            
+            
+        <pre>< p>Choose your favorite Web language:< /p>
+
+            < form>
+              < input type="radio" id="html" name="fav_language" value="HTML"> <br>
+              < label for="html">HTML< /label>< br> <br>
+              < input type="radio" id="css" name="fav_language" value="CSS"> <br>
+              < label for="css">CSS< /label>< br> <br>
+              < input type="radio" id="javascript" name="fav_language" value="JavaScript"> <br>
+              < label for="javascript">JavaScript< /label> <br>
+            < /form></pre></p>
+
+            <span class="sub_point">6. Checkboxes:</span> <br>
+        <p>The < input type="checkbox"> defines a checkbox. <br><br>
+
+            Checkboxes let a user select ZERO or MORE options of a limited number of choices. <br>
+            
+            Example <br><br>
+            A form with checkboxes: <br>
+        <pre>< form>
+            < input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> <br>
+            < label for="vehicle1"> I have a bike< /label>< br> <br>
+            < input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> <br>
+            < label for="vehicle2"> I have a car< /label>< br> <br>
+            < input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> <br>
+            < label for="vehicle3"> I have a boat< /label> <br>
+          < /form></pre></p>
+
+
+          <span class="sub_point">7. The Submit Button:</span> <br>
+          <p>The < input type="submit"> defines a button for submitting the form data to a form-handler. <br><br>
+
+            The form-handler is typically a file on the server with a script for processing input data. <br><br>
+            
+            The form-handler is specified in the form's action attribute. <br>
+            
+            Example <br><br>
+            A form with a submit button: <br>
+              
+            
+          <pre>< form action="/action_page.php"> <br>
+            < label for="fname">First name:< /label>< br> <br>
+            < input type="text" id="fname" name="fname" value="John">< br> <br>
+            < label for="lname">Last name:< /label>< br> <br>
+            < input type="text" id="lname" name="lname" value="Doe">< br>< br> <br>
+            < input type="submit" value="Submit"> <br>
+          < /form></pre></p>
+
+
+</div>
+		<div class="circle-btn">
+			<a href="ht8.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="ht10.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Comments </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

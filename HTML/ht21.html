@@ -1,0 +1,267 @@
+<html>
+	<head>
+		<title> Codopedia HTML (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">HTML</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="ht1.html" class="active" >Introduction</a>
+				<ul>
+                    <li><a href="ht1.html" >Importance</a></li>
+					<li><a href="ht2.html" >Brief Overview</a></li>
+					
+				</ul></li>
+                <li><a href="ht3.html" >HTML Syntax and Structure</a></li>
+				<li><a href="ht4.html" >Text and Formatting</a>
+				<ul>
+					<li><a href="ht5.html" >HTML links </a></li>
+					<li><a href="ht6.html" >HTML Block and Inline Elements</a></li>
+					<li><a href="ht7.html" >HTML classes</a></li>
+					<li><a href="ht8.html" >HTML ID </a></li>
+				</ul></li>
+				<li><a href="ht9.html" >HTML Forms </a>				
+				<ul>
+					<li><a href="ht10.html" >HTML Form Attributes</a></li>
+					<li><a href="ht11.html" >HTML Form Elements</a></li>
+					<li><a href="ht12.html" >HTML Input Types</a></li>
+				</ul></li>
+				<li><a href="ht13.html" >HTML Lists </a>
+				<ul>
+					<li><a href="ht14.html" >HTML Unordered Lists</a></li>
+					<li><a href="ht15.html" >HTML Ordered Lists</a></li>
+				</ul></li>
+				<li><a href="ht16.html" >HTML Media </a>
+				<ul>
+					<li><a href="ht17.html" >HTML Video</a></li>
+					<li><a href="ht18.html" >HTML Audio</a></li>
+					<li><a href="ht19.html" >HTML Plug-ins</a></li>
+					<li><a href="ht20.html" >HTML YouTube </a></li>
+				</ul></li>
+				<li><a href="ht21.html" >HTML API's </a>
+				<ul>
+					<li><a href="ht22.html" >HTML Geolocation</a></li>
+					<li><a href="ht23.html" >HTML Drag and Drop</a></li>
+				</ul></li>
+				<li><a href="ht24.html" >HTML Character Sets </a>
+				</li>
+				<li><a href="ht25.html" >HTML Styles - CSS</a>
+				</li>
+				<li><a href="ht26.html" >HTML Computer Code </a></li>
+
+                <li><a href="ht27.html" >HTML vs. XHTML </a></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">HTML API's</p>
+			<div id="content_text"> <br>
+                <p>HTML itself is not an API; it is a markup language used to structure and <br>present content on the web. However, HTML can be used in conjunction with APIs <br> to create dynamic web applications that interact with external data and <br>services.
+
+
+                     <br><br>
+                   
+                
+                  
+                </p> 
+				
+
+<span class="sub_point">1. HTML Geolocation API :</span> <br>
+<p>
+    The HTML Geolocation API is used to locate a user's position.             <br>
+ <br>
+ The HTML Geolocation API is used to get the geographical position of a user. <br>
+
+ Since this can compromise privacy, the position is not available unless the user approves it. <br>
+        
+
+
+</p>
+<span class="sub_point">2. Using HTML Geolocation : </span> <br>
+<p>
+    The getCurrentPosition() method is used to return the user's position.                 <br>
+ <br>
+The example below returns the latitude and longitude of the user's position: <br>
+
+Example      <br>          <br>
+<br>
+
+<pre>< script>                                                                             <br>
+    const x = document.getElementById("demo");  <br>
+      <br>
+    function getLocation() {  <br>
+      if (navigator.geolocation) {  <br>
+        navigator.geolocation.getCurrentPosition(showPosition);  <br>
+      } else {  <br>
+        x.innerHTML = "Geolocation is not supported by this browser.";  <br>
+      }  <br>
+    }  <br>
+      <br>
+    function showPosition(position) {  <br>
+      x.innerHTML = "Latitude: " + position.coords.latitude +  <br>
+      "< br>Longitude: " + position.coords.longitude;  <br>
+    }
+    < /script></pre> <br>
+
+
+    Example explained: <br><br>
+
+<br>
+<ul>
+<li>Check if Geolocation is supported </li>
+<li>If supported, run the getCurrentPosition() method. If not, display a message to the user </li>
+<li>If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition) </li>
+<li>The showPosition() function outputs the Latitude and Longitude </li>
+</ul>
+
+The example above is a very basic Geolocation script, with no error handling. <br>
+
+</p> 
+
+
+
+
+<span class="sub_point">3. Handling Errors and Rejections:</span> 
+<p>The second parameter of the getCurrentPosition() method is used to handle errors. It specifies <br>a function to run if it fails to get the user's location:                            <br>  <br>
+  <br>
+   
+   
+	  Example <br><br>
+
+	  <pre>
+        function showError(error) {
+            switch(error.code) {
+              case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+              case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+              case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+              case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+            }
+          }</pre>  <br>
+
+
+         <h3> Location-specific Information </h3>
+
+         This page has demonstrated how to show a user's position on a map.           <br>
+ <br>
+Geolocation is also very useful for location-specific information, like: <br>
+<br>
+<ul>
+<li>Up-to-date local information                       </li>
+<li>Showing Points-of-interest near the user  </li>
+<li>Turn-by-turn navigation (GPS)  </li>
+</ul>
+<br>
+
+</p>
+<span class="sub_point">4. Geolocation Object - Other interesting Methods</span> <br> <br>
+<br>
+The Geolocation object also has other interesting methods: <br><br>
+
+watchPosition() - Returns the current position of the user and continues to return updated <br>position as the user moves (like the GPS in a car). <br>
+clearWatch() - Stops the watchPosition() method. <br>
+The example below shows the watchPosition() method. You need an accurate GPS device to test this Example:<br><br>
+<pre>< script>
+    const x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "< br>Longitude: " + position.coords.longitude;
+    }
+    < /script> </pre>
+
+    
+
+</p>
+
+        
+   
+        
+  
+
+           
+</div>
+		<div class="circle-btn">
+			<a href="ht20.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="ht23.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Comments </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>
