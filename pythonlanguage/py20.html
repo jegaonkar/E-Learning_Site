@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">with Statement</p>
+			<div id="content_text">
+				<p>
+					The with statement in Python is used for resource management, particularly when dealing with file I/O, network connections, and database connections. It ensures that resources are properly acquired and released, even if an exception occurs. The with statement creates a context in which resources are managed and automatically cleaned up.</p>
+					<br>
+					<p>Here's how the with statement works:</p>
+					<br>
+
+<span class="sub_point">Opening a Resource:</span> <br>
+<p>
+	You use the with statement to open a resource, such as a file, network connection, or database connection. This is typically done using a function or a method that supports the with statement. For example, opening a file using open(): 
+	<pre>with open('file.txt', 'r') as file:
+		# Code that uses the file
+	# File is automatically closed when exiting the 'with' block
+	</pre>
+</p>
+
+<span class="sub_point">Indentation Block: </span> <br>
+<p>
+	The code block inside the with statement is indented. This is where you work with the resource.
+</p>
+
+<span class="sub_point">Automatic Cleanup: </span> <br>
+<p>
+	After the code block is executed or if an exception occurs, the resource is automatically closed or released. In the case of files, it is automatically closed. For other resources, any necessary cleanup actions are performed.
+</p>
+<p>The main benefit of the with statement is that it guarantees proper resource management and prevents resource leaks. You don't need to explicitly close the resource or worry about cleaning up, as Python handles it for you. It also leads to more readable and concise code.</p>
+<br>
+<p>Common use cases for the with statement include:</p>
+<br>
+<li>Reading and writing files.</li>
+<li>Working with database connections (e.g., using the sqlite3 module).</li>
+<li>Network socket connections.</li>
+<li>Working with locks for multi-threading or multi-processing.</li>
+<p>By using the with statement, you ensure that resources are properly managed and released, which can help prevent bugs and improve the overall reliability of your code.</p>
+</div>
+		<div class="circle-btn">
+			<a href="py19.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py21.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				        <a href="log.html">
+<form action="../logout.php" method="post"><button type="submit" class="login_singup_btn" name="logout">Logout</button></form>   </a>
+        <br />
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

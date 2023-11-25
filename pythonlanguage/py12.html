@@ -1,0 +1,217 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">Scope and Namespaces</p>
+			<div id="content_text">
+				<p>Understanding scope and namespaces is crucial in Python because it determines where variables and functions are accessible and how they interact with each other. Python uses a specific set of rules for managing scope and namespaces. Here's an overview:</p>
+
+<span class="sub_point">1. Scope:</span> <br>
+<p>
+	Scope refers to the region of code where a variable or function is accessible. In Python, there are mainly three levels of scope:
+</p>
+
+<span class="sub_point">Local Scope: </span> <br>
+<p>
+	Variables defined inside a function are in the local scope and can only be accessed within that function.
+	<pre>def my_function():
+		x = 10  # x is in the local scope
+	</pre>
+</p>
+
+<span class="sub_point">Enclosing (or Non-Local) Scope:</span> <br>
+<p>
+	Variables in an enclosing function can be accessed by inner functions. This is often seen in nested functions. 
+	<pre>def outer_function():
+		a = 5  # a is in the enclosing scope
+		def inner_function():
+			print(a)  # inner_function can access a from the enclosing scope
+	</pre>
+</p>
+
+<span class="sub_point">Global Scope: </span> <br>
+<p>
+	Variables defined outside of all functions are in the global scope and can be accessed from anywhere in the code.
+	<pre>y = 20  # y is in the global scope
+		def my_function():
+			print(y)  # my_function can access y from the global scope
+		</pre>
+</p>
+
+<span class="sub_point">2. Namespaces:</span> <br>
+<p>
+	A namespace is a container that holds a set of identifiers (variable names, function names, etc.) and their associated objects. Python uses various namespaces to organize and manage these identifiers. The three main types of namespaces are: <br>
+
+	<li> <b>Local Namespace:</b>Contains identifiers defined within a specific function. Each function has its own local namespace.</li>
+	<li> <b> Enclosing Namespace: </b>Contains identifiers defined in an enclosing (non-local) function when dealing with nested functions.</li>
+	<li> <b>Global Namespace: </b>Contains identifiers defined at the top level of a Python script or module. It is shared across all functions in that script or module.</li>
+	<li> <b>Built-in Namespace:</b> Contains Python's built-in functions and objects, such as print(), len(), and data types like int, str, and list. It's accessible everywhere by default.</li>
+</p>
+
+<span class="sub_point">Example:</span> <br>
+<p>
+	 <pre># Global scope
+		x = 10
+		
+		def outer_function():
+			# Enclosing (non-local) scope
+			y = 5
+			
+			def inner_function():
+				# Local scope
+				z = 2
+				print(x)  # Accesses x from the global scope
+				print(y)  # Accesses y from the enclosing scope
+				print(z)  # Accesses z from the local scope
+		
+			inner_function()
+		
+		outer_function()
+		
+		print(x)  # Accessible in the global scope
+		print(y)  # This will result in an error because y is not in the global scope
+		print(z)  # This will result in an error because z is not in the global scope
+		</pre>
+</p>
+<p>
+
+	<p>
+		In the example above, you can see how scope and namespaces work together. Variables are accessible within their own scope and any higher-level scope but not in lower-level scopes. Understanding how scope and namespaces function is crucial for writing clean, organized, and bug-free Python code.
+	</p>
+
+</div>
+		<div class="circle-btn">
+			<a href="py11.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py13.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				        <a href="log.html">
+<form action="../logout.php" method="post"><button type="submit" class="login_singup_btn" name="logout">Logout</button></form>   </a>
+        <br />
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

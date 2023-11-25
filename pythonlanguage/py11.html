@@ -1,0 +1,202 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">Function Arguments</p>
+			<div id="content_text">
+				<p>
+					In Python, function arguments are values that you pass to a function when you call it. These arguments allow you to provide input to the function, which can then use the provided data to perform its task. Python functions can accept various types of arguments, including positional arguments, keyword arguments, default arguments, and variable-length arguments. Here's an overview of these different types of function arguments:</p>
+
+<span class="sub_point">1. Positional Arguments:</span> <br>
+<p>Positional arguments are the most common type of arguments in Python. They are passed to a function in the order in which the function expects them. The order of the arguments matters.</p>
+<span class="sub_point">Example:</span> <br>
+<p>
+	<pre>def add_numbers(x, y):
+		return x + y
+	
+	result = add_numbers(5, 3)  # x = 5, y = 3
+	</pre>
+</p>
+<span class="sub_point">2. Keyword Arguments:
+</span> <br>
+<p>Keyword arguments are passed to a function with a keyword (parameter name) and a value. Using keyword arguments, you can provide the arguments in any order, as long as you specify the parameter name.</p>
+<span class="sub_point">Example: </span> <br>
+<p>
+	<pre>def greet(name, age):
+		return f"Hello, {name}! You are {age} years old."
+	
+	message = greet(age=30, name="Alice")
+	</pre>
+</p>
+<span class="sub_point">3. Default Arguments:</span> <br>
+<p>You can set default values for function parameters. If a value is not provided for a parameter when calling the function, the default value will be used.</p>
+<span class="sub_point">Example:</span> <br>
+<p>
+	<pre>def greet(name, greeting="Hello"):
+		return f"{greeting}, {name}!"
+	
+	message = greet("Bob")  # Uses the default greeting "Hello"
+	</pre>
+</p>
+<span class="sub_point">4. Variable-Length Arguments:</span> <br>
+<p> 
+	Python allows you to create functions that can accept a variable number of arguments. There are two types of variable-length arguments: *args and **kwargs.
+	<li>*args (Arbitrary Positional Arguments): This allows you to pass any number of positional arguments to a function. The arguments are collected into a tuple.</li>
+</p>
+<span class="sub_point">Example:</span> <br>
+<p>
+	<pre>def add_numbers(*args):
+		result = 0
+		for num in args:
+			result += num
+		return result
+	
+	sum = add_numbers(1, 2, 3, 4, 5)
+	</pre>
+	<li>**kwargs (Arbitrary Keyword Arguments): This allows you to pass any number of keyword arguments to a function. The arguments are collected into a dictionary.</li>
+</p>
+<span class="sub_point">Example:</span> <br>
+<p>def print_details(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_details(name="Alice", age=30, city="New York")
+</p>
+<p>These different types of function arguments provide flexibility when calling functions and allow you to create functions that can handle a variety of input data. You can choose the appropriate type of argument based on the specific requirements of your function.</p>
+
+</div>
+		<div class="circle-btn">
+			<a href="py10.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py12.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				        <a href="log.html">
+<form action="../logout.php" method="post"><button type="submit" class="login_singup_btn" name="logout">Logout</button></form>   </a>
+        <br />
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

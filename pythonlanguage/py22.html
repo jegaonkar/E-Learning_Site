@@ -1,0 +1,196 @@
+<html>
+	<head>
+		<title> Codopedia Python (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">Python Languages</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="py1.html" class="active" >Introduction</a>
+				<ul>
+					<li><a href="py1.html" >Importance</a></li>
+					<li><a href="py2.html" >Brief History</a></li>
+					<li><a href="py3.html" >Setting Up</a></li>
+				</ul></li>
+				<li><a href="py4.html" >Basics</a>
+				<ul>
+					<li><a href="py4.html" >First Program </a></li>
+					<li><a href="py5.html" >Variables</a></li>
+					<li><a href="py6.html" >Data Types</a></li>
+					<li><a href="py7.html" >Comments </a></li>
+				</ul></li>
+				<li><a href="py8.html" >Control Flow </a>				
+				<ul>
+					<li><a href="py8.html" >Conditional Statements</a></li>
+					<li><a href="py9.html" >Loops</a></li>
+					<li><a href="py10.html" >Break and Continue</a></li>
+				</ul></li>
+				<li><a href="py11.html" >Functions </a>
+				<ul>
+					<li><a href="py11.html" >Function Arguments</a></li>
+					<li><a href="py12.html" >Scope and Namespaces</a></li>
+				</ul></li>
+				<li><a href="py13.html" >Data Collections </a>
+				<ul>
+					<li><a href="py13.html" >Lists</a></li>
+					<li><a href="py14.html" >Tuples</a></li>
+					<li><a href="py15.html" >Dictionaries</a></li>
+					<li><a href="py16.html" >Sets </a></li>
+				</ul></li>
+				<li><a href="py17.html" >Strings </a>
+				<ul>
+					<li><a href="py17.html" >Working with Strings</a></li>
+					<li><a href="py18.html" >String Methods and Formatting</a></li>
+				</ul></li>
+				<li><a href="py19.html" >File Input and Output </a>
+				<ul>
+					<li><a href="py19.html" >Reading Writing</a></li>
+					<li><a href="py20.html" >with Statement</a></li>
+
+				</ul></li>
+				<li><a href="py21.html" >Exception Handling</a>
+				<ul>
+					<li><a href="py21.html" >try and except</a></li>
+					<li><a href="py22.html" >Custom Exceptions</a></li>
+				</ul></li>
+				<li><a href="py23.html" >Modules </a>
+				<ul>
+					<li><a href="py23.html" >Modules</a></li>
+				</ul></li>
+				<li><a href="py24.html" >Libraries </a>
+					<ul>
+						<li><a href="py24.html" >Libraries</a></li>
+				</ul></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">Custom Exceptions</p>
+			<div id="content_text">
+				<p>
+					In Python, you can define custom exceptions by creating new classes that inherit from the built-in Exception class or its subclasses. Custom exceptions allow you to handle specific errors or exceptional conditions in your code more effectively. Here's how to create and use custom exceptions:</p>
+
+<span class="sub_point">1. Define a Custom Exception Class:</span> <br>
+<p>
+	Create a new class that inherits from Exception or another built-in exception class. You can add your own attributes and methods to the class to provide additional information or functionality.
+	<pre>class MyCustomError(Exception):
+		def __init__(self, message):
+			super().__init__(message)
+			self.error_code = 1001  # Custom attribute
+	</pre>
+</p>
+
+<span class="sub_point">2. Raise the Custom Exception:</span> <br>
+<p>
+	In your code, when you encounter a situation that warrants the use of your custom exception, raise it using the raise statement.
+	<pre>def my_function(value):
+		if value < 0:
+			raise MyCustomError("Value cannot be negative")
+	</pre>
+</p>
+
+<span class="sub_point">3.Handling Custom Exceptions:</span> <br>
+<p>
+	You can catch and handle your custom exceptions using the try and except blocks, just like you would with built-in exceptions.
+	<pre>try:
+		my_function(-5)
+	except MyCustomError as e:
+		print(f"Custom error: {e}")
+	</pre>
+</p>
+
+<span class="sub_point">4. Custom Attributes and Methods:</span> <br>
+<p>
+	You can include custom attributes and methods in your custom exception class to provide additional information or behaviors.
+	<pre>try:
+		my_function(-5)
+	except MyCustomError as e:
+		print(f"Custom error: {e}")
+		print(f"Error code: {e.error_code}")
+	</pre>
+</p>
+
+<span class="sub_point">5. Hierarchy of Custom Exceptions:</span> <br>
+<p>
+	You can create a hierarchy of custom exceptions by defining multiple exception classes that inherit from one another. This allows you to handle related exceptions differently in your code.
+	<pre>class MyValidationError(MyCustomError):
+		def __init__(self, field):
+			super().__init__(f"Validation error in field {field}")
+	</pre>
+</p>
+
+<p>Custom exceptions are useful when you need to create meaningful and specific error messages for your code. They make it easier to identify and handle exceptional conditions and provide valuable information for debugging and troubleshooting.</p>
+
+</div>
+		<div class="circle-btn">
+			<a href="py21.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="py23.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				        <a href="log.html">
+<form action="../logout.php" method="post"><button type="submit" class="login_singup_btn" name="logout">Logout</button></form>   </a>
+        <br />
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Feedback </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

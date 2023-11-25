@@ -1,0 +1,220 @@
+<html>
+	<head>
+		<title> Codopedia HTML (Introduction)</title>
+		<link rel="stylesheet" href="..\css\page.css">
+		<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+	</head>
+	<body id="body">
+		
+
+		<div class="menubar">
+			<div id="mheading">
+		<h1>Codo<span>pedia</span>.com</h1>
+	</div>
+	<a href="..\contact.html">Contact</a>
+
+	<a href="..\m5.html">About</a>
+
+	<a href="..\m4.html">News</a>
+
+	<a href="..\m3.html">Plus Members</a>
+
+	<a  href="..\m2.html" class="active">HTML</a>
+
+	<a href="..\index.html" >Home</a>
+</div>
+
+		<span class="mid">
+		<div class="sidebar">
+			<ul>
+				<li><a href="ht1.html" class="active" >Introduction</a>
+				<ul>
+                    <li><a href="ht1.html" >Importance</a></li>
+					<li><a href="ht2.html" >Brief Overview</a></li>
+					
+				</ul></li>
+                <li><a href="ht3.html" >HTML Syntax and Structure</a></li>
+				<li><a href="ht4.html" >Text and Formatting</a>
+				<ul>
+					<li><a href="ht5.html" >HTML links </a></li>
+					<li><a href="ht6.html" >HTML Block and Inline Elements</a></li>
+					<li><a href="ht7.html" >HTML classes</a></li>
+					<li><a href="ht8.html" >HTML ID </a></li>
+				</ul></li>
+				<li><a href="ht9.html" >HTML Forms </a>				
+				<ul>
+					<li><a href="ht10.html" >HTML Form Attributes</a></li>
+					<li><a href="ht11.html" >HTML Form Elements</a></li>
+					<li><a href="ht12.html" >HTML Input Types</a></li>
+				</ul></li>
+				<li><a href="ht13.html" >HTML Lists </a>
+				<ul>
+					<li><a href="ht14.html" >HTML Unordered Lists</a></li>
+					<li><a href="ht15.html" >HTML Ordered Lists</a></li>
+				</ul></li>
+				<li><a href="ht16.html" >HTML Media </a>
+				<ul>
+					<li><a href="ht17.html" >HTML Video</a></li>
+					<li><a href="ht18.html" >HTML Audio</a></li>
+					<li><a href="ht19.html" >HTML Plug-ins</a></li>
+					<li><a href="ht20.html" >HTML YouTube </a></li>
+				</ul></li>
+				<li><a href="ht21.html" >HTML API's </a>
+				<ul>
+					<li><a href="ht22.html" >HTML Geolocation</a></li>
+					<li><a href="ht23.html" >HTML Drag and Drop</a></li>
+				</ul></li>
+				<li><a href="ht24.html" >HTML Character Sets </a>
+				</li>
+				<li><a href="ht25.html" >HTML Styles - CSS</a>
+				</li>
+				<li><a href="ht26.html" >HTML Computer Code </a></li>
+
+                <li><a href="ht27.html" >HTML vs. XHTML </a></li>
+
+		</div>
+		<div class="content">
+			<p id="content_heading">HTML Character Sets</p>
+			<div id="content_text"> <br>
+                <p>To display an HTML page correctly, a web browser must know which character set to use.
+
+
+                     <br><br>
+                   
+                
+                  
+                </p> 
+				
+
+<span class="sub_point">1. The HTML charset Attribute :</span> <br>
+<p>
+    The character set is specified in the < meta> tag: <br>
+
+    Example <br> <br>
+
+    <pre>< meta charset="UTF-8"></pre>
+
+    The HTML5 specification encourages web developers to use the UTF-8 character set. <br>
+
+UTF-8 covers almost all of the characters and symbols in the world! <br>
+        
+
+
+</p>
+<span class="sub_point">2. The ASCII Character Set : </span> <br>
+<p>
+    ASCII was the first character encoding standard for the web. It defined 128 different <br>characters that could be used on the internet: <br><br>
+<ul>
+   <li> English letters (A-Z)                             </li>
+   <li> Numbers (0-9)  </li>
+   <li> Special characters like ! $ + - ( ) @ < >.  </li>
+
+</ul>
+                           
+<h3>The ANSI Character Set</h3>
+<br>
+ANSI (Windows-1252) was the original Windows character set: <br><br>
+<ul>
+<li>Identical to ASCII for the first 127 characters                    </li>
+<li>Special characters from 128 to 159 </li>
+<li>Identical to UTF-8 from 160 to 255 <br> </li>
+</ul>
+
+  <pre>< meta charset="Windows-1252"></pre>
+
+</p> 
+
+
+
+
+<span class="sub_point">3. The ISO-8859-1 Character Set:</span> 
+<p>ISO-8859-1 was the default character set for HTML 4. This character set supported 256 different <br> character codes. HTML 4 also supported UTF-8. <br><br>
+<ul>
+<li> Identical to ASCII for the first 127 characters      </li>
+<li> Does not use the characters from 128 to 159 </li>
+<li> Identical to ANSI and UTF-8 from 160 to 255 </li>
+</ul>
+
+
+HTML 4 Example <br><br>
+	  <pre>
+        < meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"></pre>  <br>
+
+
+        HTML 5 Example <br><br>
+
+        <pre>< meta charset="ISO-8859-1"></pre>
+<br>
+
+</p>
+<span class="sub_point">4. The UTF-8 Character Set</span> <br> <br>
+<br>
+is identical to ASCII for the values from 0 to 127             <br>
+Does not use the characters from 128 to 159 <br>
+Identical to ANSI and 8859-1 from 160 to 255 <br>
+Continues from the value 256 to 10 000 characters <br><br>
+<pre>< meta charset="UTF-8"> </pre>
+
+    
+
+</p>
+
+        
+   
+        
+  
+
+           
+</div>
+		<div class="circle-btn">
+			<a href="ht23.html" class="circle-left-btn"><i class="fas fa-chevron-circle-left"></i></a>
+			<a href="ht25.html" class="circle-right-btn"><i class="fas fa-chevron-circle-right"></i></a>
+		</div>		
+		</div>
+		</span>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+			<a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
+				        <a href="log.html">
+<form action="../logout.php" method="post"><button type="submit" class="login_singup_btn" name="logout">Logout</button></form>   </a>
+        <br />
+				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
+				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+
+				</div>
+
+				<div>
+					<p>+91-7775938882</p>
+				</div>
+
+				<div>
+					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-right-heading">
+					<span>Comments </span>
+				</p>
+				<div class="footer-input-box">
+					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
+					<input class="cbox" type="text" placeholder="Comment...">
+					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
+				</div>
+
+			</div>
+
+		</footer>
+	</body>
+</html>

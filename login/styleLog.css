@@ -1,0 +1,204 @@
+.codopedia-login-page {
+  background-color: #ebefff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.codopedia-login-page .div {
+  background-color: #ebefff;
+  overflow: hidden;
+  width: 1280px;
+  height: 720px;
+  position: relative;
+}
+
+.codopedia-login-page .overlap {
+  position: absolute;
+  width: 715px;
+  height: 720px;
+  top: 0;
+  left: 565px;
+}
+
+.codopedia-login-page .rectangle {
+  position: absolute;
+  width: 438px;
+  height: 720px;
+  top: 0;
+  left: 277px;
+  background-color: #008cff;
+}
+
+.codopedia-login-page .object-other {
+  position: absolute;
+  width: 600px;
+  height: 590px;
+  top: 37px;
+  left: 0;
+  background-image: url(./img/object-other-03.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.codopedia-login-page .social-media-icons {
+  position: absolute;
+  width: 88px;
+  height: 24px;
+  top: 541px;
+  left: 256px;
+}
+
+.codopedia-login-page .rectangle-2 input{
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 250px;
+  left: 122px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #003b93;
+  text-align: center;
+}
+
+.codopedia-login-page .rectangle-3 input{
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 326px;
+  left: 122px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: #003b93;
+  text-align: center;
+}
+
+.codopedia-login-page .text-wrapper {
+  position: absolute;
+  top: 219px;
+  left: 122px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.codopedia-login-page .dont-have-and {
+  position: absolute;
+  top: 489px;
+  left: 188px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.codopedia-login-page .span {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.codopedia-login-page .text-wrapper-2 {
+  font-weight: 500;
+}
+
+.codopedia-login-page .text-wrapper-3 {
+  position: absolute;
+  top: 176px;
+  left: 240px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #191919;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.codopedia-login-page .group {
+  position: absolute;
+  width: 367px;
+  height: 34px;
+  top: 402px;
+  left: 124px;
+}
+
+.codopedia-login-page .overlap-group button {
+  position: relative;
+  width: 365px;
+  height: 34px;
+  background-color: #003b93;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.codopedia-login-page .text-wrapper-4{
+  position: absolute;
+  top: 7px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #afb3ff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  background: transparent;
+  transition: background-color 0.3s;
+}
+
+.codopedia-login-page .text-wrapper-4:hover{
+  background-color: #0849ab;
+}
+
+.codopedia-login-page .text-wrapper-5 {
+  position: absolute;
+  top: 295px;
+  left: 124px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.codopedia-login-page .overlap-2 {
+  position: absolute;
+  width: 543px;
+  height: 499px;
+  top: 520px;
+  left: -287px;
+}
+
+.codopedia-login-page .rectangle-4 {
+  position: absolute;
+  width: 597px;
+  height: 141px;
+  top: 179px;
+  left: -27px;
+  background-color: #003b93;
+  border-radius: 105.53px;
+  transform: rotate(-41.1deg);
+}
+
+.codopedia-login-page .rectangle-5 {
+  position: absolute;
+  width: 554px;
+  height: 131px;
+  top: 177px;
+  left: 10px;
+  background-color: #008cff;
+  border-radius: 105.53px;
+  transform: rotate(-41.1deg);
+}
