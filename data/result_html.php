@@ -82,10 +82,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Redirect based on the score
     if ($score >= 7) {
-        header("Location: congratulations.php");
+        echo '<script>alert("CONGRATULATIONS !!! You will get certificate on your Email");';
+        echo 'window.location.href = "../index.php";</script>';
         exit();
     } else {
-        header("Location: try_again.php");
+        echo '<script>alert("Better Luck. Please try again.");';
+        echo 'window.location.href = "../HTML/assesment_html.php";</script>';
         exit();
     }
 }

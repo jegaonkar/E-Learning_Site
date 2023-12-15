@@ -76,16 +76,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO quiz_results_c (name, email, score) VALUES ('$name', '$email', $score)";
     if ($conn->query($sql) === TRUE) {
         echo "Score saved successfully!";
+        
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 
     // Redirect based on the score
     if ($score >= 7) {
-        header("Location: congratulations.php");
+        echo '<script>alert("CONGRATULATIONS !!! You will get certificate on your Email");';
+        echo 'window.location.href = "../index.php";</script>';
         exit();
     } else {
-        header("Location: try_again.php");
+        echo '<script>alert("Better Luck. Please try again.");';
+        echo 'window.location.href = "../clanguage/assesment_c.php";</script>';
         exit();
     }
 }
