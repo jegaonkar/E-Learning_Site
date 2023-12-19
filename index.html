@@ -4,26 +4,80 @@
     <link rel="stylesheet" href="css\page.css" />
     <link rel="stylesheet" href="css/font/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/m1.css" />
+    <style>
+    
+    .firstSection {
+      font-family: 'Times New Roman', Times, serif !important;
+      color: rgb(255, 255, 255);
+      height: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 29px 0;
+      font-size: 70px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+    .firstSection::before{
+  content: '';
+  position: absolute;
+  background: linear-gradient(45deg,rgb(0, 0, 255, 0.600), rgb(0, 0, 20), rgba(255, 217, 0, 0.600));
+  background-size: 200% 200%;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  filter: blur(30px);
+  animation: glowing 5s ease infinite;
+}
 
+    .firstSection div {
+      width: 30%;
+    }
+    .leftSection {
+      margin: 10% 0;
+    }
+    .rightSection img {
+      width: 80%;
+      margin: 20%;
+    }
+    .nameColor, #element {
+      color: rgb(0, 200, 255);
+    }
+    .horizontalLine{
+      margin: 50px;
+      background-color: white;
+      width: 90%;
+      height: 1px;
+      margin-left: 5%;
+    }
+    
+    </style>
   </head>
   <body id="body">
-    <div class="menubar">
-      <div id="mheading">
-        <h1>
-          Codo
-          <span>pedia</span>
-          .com
-        </h1>
-      </div>
-      <a href="contact.html">Contact</a>
+  	<div id="navbarContainer"></div>
 
-      <a href="m5.html">About</a>
-
-      <a href="m4.html">News</a>
-
-      <a href="m3.html">Plus Members</a>
-      <a href="index.html" class="active">Home</a>
-    </div>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hello,Wellcome to <Span class="nameColor">Codopedia</Span><br>
+          <span>Learn with Codopedia.</span> <br>
+          <span id="element">Mastering the Future</div>
+          </span>
+        <div class="rightSection">
+          <img src="css/programmers.png" alt="">
+        </div>
+      </section>
+      <div class="horizontalLine"></div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Exploring the Code','Mastering the Future','Unlock the Code to Success','Empowering Dreams','Coding Brilliance Starts Here','Infinite Knowledge','Coding Tomorrow\'s Future','Code, Learn, Thrive','Infinite Knowledge','Coding Ignite Your Code','Infinite Potential','Dive into Codopedia\'s Universe','From Novice to Ninja','Coding Ignite Your Code','Community Brilliance','Coding Excellence','Coding Ignite Your Code','Infinite Potential','Dive into Codopedia\'s Universe','From Novice to Ninja','Coding Ignite Your Code','Community Brilliance','Coding Excellence','Unleash Your Coding Potential','Elevate Your Code, Elevate Your Future','Where Code Meets Creativity','Coding Wisdom for Tomorrow','Your Journey to Coding Mastery','Igniting Passion through Code','Infinite Possibilities with Codopedia','Coding Dreams, One Line at a Time','Code, Create, Conquer','Empowering Innovators through Code','Unveil the Power of Programming','Coding Horizons, Endless Discoveries','Elevate Your Code, Elevate Your Future','Journey to Coding Mastery Starts Here','Inspiring Coders, Shaping Futures','Transforming Lives, One Line of Code at a Time','Code with Confidence, Thrive with Codopedia','Unlocking the Code to Your Success','Coding Brilliance, Community Excellence','Master the Art of Coding with Codopedia','Code, Learn, Thrive: Your Path to Excellence','Infinite Knowledge, Infinite Possibilities','Igniting Minds, Transforming Futures','From Aspiring Coder to Coding Maestro','Infinite Learning, Infinite Coding'
+ ],
+        typeSpeed: 80,
+      });
+    </script> 
     <!--1 card-->
     <div class="home_page_content">
       <div class="card">
@@ -339,61 +393,30 @@
             </div>
           </div>
         </div>
-        <a href="#.html">
+        <a href="#">
           <i class="far fa-play-circle"></i>
         </a>
       </div>
     </div>
-    <footer class="footer-distributed">
-      <div class="footer-left">
- <a href="index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
-        <br />
-        <a href="log.html">
-          <button class="login_singup_btn">Login/Signup</button>
-        </a>
-        <br />
-        <a href="https://www.facebook.com/codopedia1/" target="_blank">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="https://twitter.com/Codopedia1" target="_blank">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="https://www.instagram.com/codopedia1/" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-		
-		<div class="copyright">© 2023 Codopedia.com</div>
-      </div>
 
-      <div class="footer-center">
-		<div class="newsletter-container">
-			<h1>Subscribe to Our Newsletter</h1>
-			<p>Stay updated with our latest courses and news.</p>
-			<form id="newsletter-form">
-				<input type="email" id="email" placeholder="Your Email" required>
-				<button type="submit">Subscribe</button>
-			</form>
-		</div>
-      </div>
+    <div id="footerContainer"></div>
 
-      <div class="footer-right">
-        <p class="footer-right-heading">
-          <span>Feedback</span>
-        </p>
-        <form class="footer-input-box" action="comment.php" method="post">
-          <input
-            class="ebox"
-            type="text"
-            placeholder="Enter E-mail ID..."
-            name="cusername"
-          />
-          <br />
-          <input class="cbox" type="text" placeholder="Comment..." />
-          <a href="submit.html">
-            <input class="button" type="button" value="Submit" name="comment" />
-          </a>
-        </form>
-      </div>
-    </footer>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Load sidebar content dynamically
+			$('#sidebarContainer').load('sidebar.html');
+			$('#footerContainer').load('../footer.html');
+			$('#navbarContainer').load('../navbar.html');
+			// Your existing JavaScript for handling sidebar interactions goes here
+
+			// Redirect to link on click
+			$('nav a').on('click', function () {
+				var link = $(this).attr('href');
+				$('iframe').attr('src', link);
+			});
+		});
+	</script>
   </body>
 </html>

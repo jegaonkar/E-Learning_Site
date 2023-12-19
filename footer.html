@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="path/to/your/other/styles.css">
+    <!-- Add other meta tags and links as needed -->
+
+    <style>
+        /* Add the provided CSS styles here */
+        .footer-distributed {
+            background: rgba(102, 102, 102);
+            box-sizing: border-box;
+            width: 100%;
+            height: 50%;
+            text-align: left;
+            font: 40px sans-serif;
+            padding: 25px 20px;
+        }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* Footer left */
+        .footer-distributed .footer-left {
+            width: 40%;
+        }
+
+        .footer-distributed .footer_logo {
+            color: #ffffff;
+            font: 120px ink free;
+            margin: 0;
+        }
+
+        .footer-distributed .footer_logo span {
+            color: GOLD;
+            font: 110px ink free;
+        }
+
+        .footer-distributed .footer-left .login_singup_btn {
+            margin-left: 5%;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            background: transparent;
+            font-weight: 1000;
+            border-radius: 5px;
+            border: 1px solid rgb(255, 255, 255);
+            text-shadow: 0px 0px 10px maroon;
+            text-transform: uppercase;
+        }
+
+        .footer-distributed .footer-left .login_singup_btn:hover {
+            background-color: gold;
+            box-shadow: inset 0 0 10px rgb(255, 0, 179);
+        }
+
+        .footer-distributed .footer-left i {
+            font-size: 50px;
+            margin: 20px;
+            color: blanchedalmond;
+        }
+
+        .footer-distributed .footer-left i:hover {
+            color: gold;
+            text-shadow: rgb(255, 215, 0, 1);
+        }
+
+        /* Footer Center */
+        .newsletter-container {
+            width: 55%;
+            text-align: center;
+            background-color: rgb(102, 102, 102);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 54px;
+            margin: 0 0 10px;
+        }
+
+        p {
+            font-size: 1em;
+            margin: 0 0 20px;
+        }
+
+        #newsletter-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type='email'] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0 0 10px;
+            font-size: 26px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 26px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer-distributed .footer-center {
+            width: 35%;
+        }
+
+        .footer-distributed .footer-center  {
+            display: inline-block;
+            color: #ffffff;
+            font-weight: 400;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        .footer-distributed .footer-center p span {
+            display: none;
+            font-weight: normal;
+            line-height: 2;
+        }
+
+        .footer-distributed .footer-center p a {
+            color: gold;
+            text-decoration: none;
+        }
+        .f_list li a{
+            color: rgb(0, 0, 0);
+        }
+        a{
+          
+  text-decoration: none;
+        }
+        /* Footer Right */
+        .footer-distributed .footer-right {
+            width: 20%;
+            color: white;
+        }
+
+        .footer-distributed .footer-right-heading {
+            line-height: 20px;
+            color: #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .footer-distributed .footer-right-heading span {
+            display: block;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer-distributed .footer-input-box input {
+            margin: 5px;
+            width: 100%;
+            border-radius: 24px;
+            border: 2px solid rgb(255, 255, 255);
+            box-shadow: inset 0 0 10px rgb(0, 0, 0);
+            font-size: 24px;
+        }
+
+        .footer-distributed .ebox {
+            height: 40px;
+            padding-left: 7%;
+            font-weight: 100;
+        }
+
+        .footer-distributed .cbox {
+            height: 100px;
+            padding-left: 7%;
+            font-weight: 100;
+        }
+
+        .button {
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            background: transparent;
+            font-weight: 1000;
+            border-radius: 5px;
+            border: 1px solid rgb(255, 255, 255);
+            text-shadow: 0px 0px 10px maroon;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: gold;
+            box-shadow: inset 0 0 10px rgb(255, 0, 179);
+        }
+
+        /* Add your animation CSS here */
+    </style>
+</head>
+
+<body>
+
+    <!-- Add your page content here -->
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="footer-distributed">
+                <div class="row">
+                    <div class="footer-left">
+                        <div class="f_widget company_widget">
+                            <h3 class="footer_logo">Codo<span>pedia</span>.com</h3>
+                            <div class="newsletter-container">
+                                <h1>Subscribe to Our Newsletter</h1>
+                                <p>Stay updated with our latest courses and news.</p>
+                                <form id="newsletter-form">
+                                    <input type="email" id="email" placeholder="Your Email" required>
+                                    <button type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                            <br>
+                            <a href="https://www.facebook.com/codopedia1/" target="_blank"><i
+                                    class="fab fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/Codopedia1" target="_blank"><i
+                                    class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/codopedia1/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-center">
+                        <div class="f_widget about-widget pl_70">
+                            <h3 class="f-title f_600 t_color f_size_18">Programming and Development</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Programming Languages</a></li>
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Mobile App Development:</a></li>
+                                <li><a href="#">Data Science and Analytics</a></li>
+                                <li><a href="#">Cybersecurity</a></li>
+                                <li><a href="#">Cloud Computing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="f_widget about-widget pl_70">
+                            <h3 class="f-title f_600 t_color f_size_18">Technology Trends and Beyond</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Software Development Lifecycle</a></li>
+                                <li><a href="#">Tech News and Trends</a></li>
+                                <li><a href="#">Gaming and Game Development</a></li>
+                                <li><a href="#">Hardware and IoT (Internet of Things)</a></li>
+                                <li><a href="#">Artificial Intelligence:</a></li>
+                                <li><a href="#">Tech Careers and Job Market</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© Codo<span>pedia</span>.com. All rights reserved.</p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      
+    </script>
+
+</body>
+
+</html>

@@ -5,167 +5,114 @@
     <link rel="stylesheet" href="css/font/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/about.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+        .mid{
+            height: 90vh;
         }
 
-        .membership-description {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
+.membership-container {
+    font-size: 300%;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
 
-        h1 {
-            font-size: 28px;
-        }
+.membership-card {
+    width: 100%;
+    height: 500px;
+    margin-left: 5%;
+    margin-left: 5%;
+    padding: 20px;
+    color: black;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-        h2 {
-            font-size: 24px;
-        }
+.membership-card h2 {
+    color: #3498db;
+}
 
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
+.membership-card ul {
+    list-style: none;
+    padding: 0;
+}
 
-        ul {
-            list-style-type: disc;
-        }
+.membership-card ul li {
+    margin-bottom: 10px;
+}
 
-        li {
-            margin-bottom: 10px;
-        }
+.membership-card button {
+    font-size: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
-        }
+.membership-card button:hover {
+    background-color: #2980b9;
+}
 
-        a.button {
-            display: inline-block;
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
 
-        a.button:hover {
-            background-color: #0056b3;
-        }
     </style>
   </head>
   <body id="body">
-    <div class="menubar">
-      <div id="mheading">
-        <h1>
-          Codo
-          <span>pedia</span>
-          .com
-        </h1>
-      </div>
-      <a href="contact.html">Contact</a>
-
-      <a href="..\m5.html">About</a>
-
-      <a href="..\m4.html">News</a>
-
-      <a href="..\m3.html" class="active">Plus Members</a>
-
-      <a href="..\index.html">Home</a>
-    </div>
+   
+	<div id="navbarContainer"></div>
 
     <span class="mid">
       <main>
         <div class="point-wrap">
             <center> <h2 class="about-point" style=";font-size:150px;">Membership Plans</center>
           </div>
-            <h2 class="about-point">Basic Membership</h2>
-             <p class="about-point-content">
-                Our Basic Membership plan is perfect for those who want to get started with access to our platform's essential features. Here's what you get:
-            </p>
-            <ul class="about-point-content">
-                <li>Access to a selection of beginner-level courses</li>
-                <li>Weekly newsletter with coding tips</li>
-                <li>Limited community forum access</li>
-            </ul>
-            
-            <h2 class="about-point">Premium Membership</h2>
-            <p class="about-point-content">
-                Upgrade to our Premium Membership for an enhanced learning experience. With Premium Membership, you'll receive:
-            </p>
-            <ul class="about-point-content">
-                <li>Full access to all courses and tutorials</li>
-                <li>Exclusive content and advanced courses</li>
-                <li>Unlimited community forum access</li>
-                <li>24/7 priority customer support</li>
-            </ul>
-
-            <h2 class="about-point">How to Join</h2>
-            <p class="about-point-content">
-                Ready to take your coding journey to the next level? Choose the membership plan that suits your needs and click the button below to get started.
-            </p>
-            <div class="button-container">
-                <a class="button" href="payment.html">Join Now</a>
+          <div class="membership-container">
+            <div class="membership-card" id="basic-membership">
+                <h2>Basic Membership</h2>
+                <ul>
+                    <li>Access to a selection of beginner-level courses</li>
+                    <li>Weekly newsletter with coding tips</li>
+                    <li>Limited community forum access</li>
+                </ul>
+                <button>Join Basic Membership</button>
             </div>
+    
+            <div class="membership-card" id="premium-membership">
+                <h2>Premium Membership</h2>
+                <ul>
+                    <li>Full access to all courses and tutorials</li>
+                    <li>Exclusive content and advanced courses</li>
+                    <li>Unlimited community forum access</li>
+                    <li>24/7 priority customer support</li>
+                </ul>
+                <button>Upgrade to Premium</button>
+            </div>
+        </div>
        
       </main>
     </span>
 
-    <footer class="footer-distributed">
-      <div class="footer-left">
-<<<<<<< HEAD
- <a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
-=======
- <a href="../index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
->>>>>>> origin/main
-        <br />
-        <a href="log.html">
-          <button class="login_singup_btn">Login/Signup</button>
-        </a>
-        <br />
-        <a href="https://www.facebook.com/codopedia1/" target="_blank">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="https://twitter.com/Codopedia1" target="_blank">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="https://www.instagram.com/codopedia1/" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
+		<div id="footerContainer"></div>
 
-      <div class="footer-center">
-        <div></div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Load sidebar content dynamically
+			$('#sidebarContainer').load('sidebar.html');
+			$('#footerContainer').load('../footer.html');
+			$('#navbarContainer').load('../navbar.html');
+			// Your existing JavaScript for handling sidebar interactions goes here
 
-        <div>
-          <p>+91-7775938882</p>
-        </div>
-
-        <div>
-          <p><a href="mailto:support@company.com">codopedia@gmail.com</a></p>
-        </div>
-      </div>
-
-      <div class="footer-right">
-        <p class="footer-right-heading">
-          <span>Feedback</span>
-        </p>
-        <div class="footer-input-box">
-          <input class="ebox" type="text" placeholder="Enter E-mail ID..." />
-          <br />
-          <input class="cbox" type="text" placeholder="Comment..." />
-          <a href="submit.html">
-            <input class="button" type="button" value="Submit" />
-          </a>
-        </div>
-      </div>
-    </footer>
+			// Redirect to link on click
+			$('nav a').on('click', function () {
+				var link = $(this).attr('href');
+				$('iframe').attr('src', link);
+			});
+		});
+	</script>
   </body>
 </html>

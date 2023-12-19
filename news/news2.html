@@ -63,55 +63,27 @@
 
 		</div>
 		</span>
+	<footer >
 
-<footer class="footer-distributed">
+		<div id="footerContainer"></div>
 
-			<div class="footer-left">
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Load sidebar content dynamically
+			$('#sidebarContainer').load('sidebar.html');
+			$('#footerContainer').load('../footer.html');
+			$('#navbarContainer').load('../navbar.html');
+			// Your existing JavaScript for handling sidebar interactions goes here
 
-<<<<<<< HEAD
-			<a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
-				        <a href="log.html">
-<form action="../logout.php" method="post"><button type="submit" class="login_singup_btn" name="logout">Logout</button></form>   </a>
-        <br />
-=======
-			<a href="../index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
-				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
->>>>>>> origin/main
-				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
-				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
-				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
-			</div>
-
-			<div class="footer-center">
-
-				<div>
-
-				</div>
-
-				<div>
-					<p>+91-7775938882</p>
-				</div>
-
-				<div>
-					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
-				</div>
-
-			</div>
-
-			<div class="footer-right">
-
-				<p class="footer-right-heading">
-					<span>Feedback </span>
-				</p>
-				<div class="footer-input-box">
-					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
-					<input class="cbox" type="text" placeholder="Comment...">
-					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
-				</div>
-
-			</div>
-
-		</footer>
+			// Redirect to link on click
+			$('nav a').on('click', function () {
+				var link = $(this).attr('href');
+				$('iframe').attr('src', link);
+			});
+		});
+	</script>
 		
 	</body>
 </html>

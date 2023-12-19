@@ -7,83 +7,11 @@
 	<body id="body">
 		
 
-		<div class="menubar">
-			<div id="mheading">
-		<h1>Codo<span>pedia</span>.com</h1>
-	</div>
-	<a href="..\contact.html">Contact</a>
-
-	<a href="..\m5.html">About</a>
-
-	<a href="..\m4.html">News</a>
-
-	<a href="..\m3.html">Plus Members</a>
-
-	<a  href="..\m2.html" class="active">HTML</a>
-
-	<a href="..\index.html" >Home</a>
-</div>
+	<div id="navbarContainer"></div>
 
 		<span class="mid">
-		<div class="sidebar">
-			<ul>
-				<li><a href="ht1.html" class="active" >Introduction</a>
-				<ul>
-                    <li><a href="ht1.html" >Importance</a></li>
-					<li><a href="ht2.html" >Brief Overview</a></li>
-					<li><a href="ht3.html" >HTML Syntax and Structure</a></li>
-				</ul></li>
-				<li><a href="ht4.html" >Text and Formatting</a>
-				<ul>
-					<li><a href="ht5.html" >HTML links </a></li>
-					<li><a href="ht6.html" >HTML Block and Inline Elements</a></li>
-					<li><a href="ht7.html" >HTML classes</a></li>
-					<li><a href="ht8.html" >HTML ID </a></li>
-				</ul></li>
-				<li><a href="ht9.html" >HTML Forms </a>				
-				<ul>
-					<li><a href="ht10.html" >HTML Form Attributes</a></li>
-					<li><a href="ht11.html" >HTML Form Elements</a></li>
-					<li><a href="ht12.html" >HTML Input Types</a></li>
-				</ul></li>
-				<li><a href="ht11.html" >HTML Lists </a>
-				<ul>
-					<li><a href="ht11.html" >Function Arguments</a></li>
-					<li><a href="ht12.html" >Scope and Namespaces</a></li>
-				</ul></li>
-				<li><a href="ht13.html" >Data Collections </a>
-				<ul>
-					<li><a href="ht13.html" >Lists</a></li>
-					<li><a href="ht14.html" >Tuples</a></li>
-					<li><a href="ht15.html" >Dictionaries</a></li>
-					<li><a href="ht16.html" >Sets </a></li>
-				</ul></li>
-				<li><a href="ht17.html" >Strings </a>
-				<ul>
-					<li><a href="ht17.html" >Working with Strings</a></li>
-					<li><a href="ht18.html" >String Methods and Formatting</a></li>
-				</ul></li>
-				<li><a href="ht19.html" >File Input and Output </a>
-				<ul>
-					<li><a href="ht19.html" >Reading Writing</a></li>
-					<li><a href="ht20.html" >with Statement</a></li>
+		<div id="sidebarContainer"></div>
 
-				</ul></li>
-				<li><a href="ht21.html" >Exception Handling</a>
-				<ul>
-					<li><a href="ht21.html" >try and except</a></li>
-					<li><a href="ht22.html" >Custom Exceptions</a></li>
-				</ul></li>
-				<li><a href="ht23.html" >Modules </a>
-				<ul>
-					<li><a href="ht23.html" >Modules</a></li>
-				</ul></li>
-				<li><a href="ht24.html" >Libraries </a>
-					<ul>
-						<li><a href="ht24.html" >Libraries</a></li>
-				</ul></li>
-
-		</div>
 		<div class="content">
 			<p id="content_heading">Importance of Learning HTML </p>
 			<div id="content_text">
@@ -123,53 +51,26 @@
 		</div>
 		</span>
 
-<footer class="footer-distributed">
+	<footer >
 
-			<div class="footer-left">
+		<div id="footerContainer"></div>
 
-<<<<<<< HEAD
-			<a href="../index.php">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
-				        <a href="log.html">
-<form action="../logout.php" method="post"><button type="submit" class="login_singup_btn" name="logout">Logout</button></form>   </a>
-        <br />
-=======
-			<a href="../index.html">	<h3>Codo<span>pedia</span>.com</h3></a> <br>
-				<a href="log.html"><button class="login_singup_btn">Login/Signup</button></a> <br>
->>>>>>> origin/main
-				<a href="https://www.facebook.com/codopedia1/" target="_blank">	<i class="fab fa-facebook-square"></i></a>
-				<a href="https://twitter.com/Codopedia1"  target="_blank">	<i class="fab fa-twitter-square"></i></a>
-				<a href="https://www.instagram.com/codopedia1/" target="_blank" >	<i class="fab fa-instagram"></i> </a>
-			</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Load sidebar content dynamically
+			$('#sidebarContainer').load('sidebar.html');
+			$('#footerContainer').load('../footer.html');
+			$('#navbarContainer').load('../navbar.html');
+			// Your existing JavaScript for handling sidebar interactions goes here
 
-			<div class="footer-center">
-
-				<div>
-
-				</div>
-
-				<div>
-					<p>+91-7775938882</p>
-				</div>
-
-				<div>
-					<p><a href="mailto:support@company.com"> codopedia@gmail.com</a></p>
-				</div>
-
-			</div>
-
-			<div class="footer-right">
-
-				<p class="footer-right-heading">
-					<span>Comments </span>
-				</p>
-				<div class="footer-input-box">
-					<input class="ebox" type="text" placeholder="Enter E-mail ID..."> <br>
-					<input class="cbox" type="text" placeholder="Comment...">
-					<a href="submit.html"><input class="button" type="button" value="Submit"></a>
-				</div>
-
-			</div>
-
-		</footer>
+			// Redirect to link on click
+			$('nav a').on('click', function () {
+				var link = $(this).attr('href');
+				$('iframe').attr('src', link);
+			});
+		});
+	</script>
 	</body>
 </html>

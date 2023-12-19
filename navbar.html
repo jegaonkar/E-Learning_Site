@@ -1,0 +1,105 @@
+<html>
+	<head>
+    
+	<link rel="stylesheet" href="..\css/font/fontawesome/css/all.min.css">
+		<style>
+			nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #00306D;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav .navbar .menu {
+  display: flex;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+.navbar .menu li :hover{
+  font-weight: 600;
+  text-shadow: black;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+      .animated {
+	color: white;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flip {
+  50% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.8);animation-timing-function: ease-in;}
+  80% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);animation-timing-function: ease-in;}
+  100% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);animation-timing-function: ease-in;}
+}
+.animated.flip {
+  backface-visibility: visible;
+  animation-name: flip;
+  font-size: 30px;
+  font-weight: bolder;
+  width: 150px;
+  text-align: center;
+}
+
+		</style>
+	</head>
+	<body id="body">	<div class="nav-container">
+		<nav class="navbar">
+			<nav>
+				<div class="navbar">
+					<div id="mheading" class="logo navbar-brand animated flip" >
+						<h1>Codo<span>pedia</span>.com</h1>
+					</div>> <ul class="menu">
+						<li><a href="..\index.html">Home</a></li>
+						<li><a href="..\m3.html">Plus Members</a></li>
+						<li><a href="..\m4.html">News</a></li>
+						<li><a href="..\m5.html">About</a></li>
+						<li><a href="..\contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</nav>
+	</div>
+
+							<script>
+					$('.feat-btn').click(function(){
+						$('nav ul .feat-show').toggleClass("show");
+						$('nav ul .first').toggleClass("rotate");
+					});
+					$('.serv-btn').click(function(){
+						$('nav ul .serv-show').toggleClass("show1");
+						$('nav ul .second').toggleClass("rotate");
+					});
+		 </script>
+	</body>
+</html>
